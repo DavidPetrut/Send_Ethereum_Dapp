@@ -24,6 +24,7 @@ interface TransactionInfo {
 
 const contractAddress = "0x1dE0aB01CCe1784f9864660f102c0470F75356aD"; 
 
+
 function SendEther() {
   const [recipient, setRecipient] = useState<string>("");
   const [amount, setAmount] = useState<string>("");
