@@ -1,0 +1,125 @@
+.input-field {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  .nav-link {
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    transform: translateY(-2px);
+  }
+  
+
+  .gradient-background {
+    background: linear-gradient(135deg, #9D50BB, #6B8E23);
+  }
+
+
+  .nav-link:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  
+  @media (min-width: 768px) {
+    .nav-link {
+      margin: 0 auto; 
+    }
+  }
+
+
+  .orange {
+    background-color: rgb(178, 116, 1);
+  }
+  
+
+  .orange:hover {
+    background-color: rgb(121, 80, 3);
+  }
+  
+
+  /*custom animation that combines spinning and pulsing for bitcoint icon */
+  @keyframes spinPulse {
+    0% {
+      transform: scale(1) rotate(0deg);
+    }
+    50% {
+      transform: scale(1.1) rotate(180deg);
+    }
+    100% {
+      transform: scale(1) rotate(360deg);
+    }
+  }
+  
+
+  
+  /* Apply the spin-pulse animation to the wrapping div or the FontAwesomeIcon directly */
+  .spin-pulse {
+    animation: spinPulse 2s linear infinite;
+  }
+  
+  @keyframes shine {
+    0%, 50.44%, {
+      background-position: -200% 0;
+    }
+    50% {
+      background-position: 200% 0;
+    }
+  }
+  
+  /* Apply to the icon wrapper for a more controlled area */
+  .shine {
+    display: inline-block; /* or block with a defined width and height */
+    position: relative;
+    width: 40px; 
+    height: 40px; 
+  }
+  
+  .shine::after {
+    content: "";
+    position: absolute;
+    top: -45%; 
+    left: -52%;
+    right: -38%;
+    bottom: -45%;
+    background: linear-gradient(135deg, 
+    rgba(255,255,255,0) 25%, 
+    rgba(255,255,255,0.6) 45%, 
+    rgba(255,255,255,0.8) 50%, 
+    rgba(255,255,255,0.6) 55%, 
+    rgba(255,255,255,0) 75%);
+    background-size: 2500% 2500%; 
+    animation: shine 4s linear infinite;
+    border-radius: 50%;
+  }
+  
+
+
+  .special {
+    margin-top: -17px;
+    margin-left: -19px;
+  }
+
+
+ .specialBorder {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+ }
